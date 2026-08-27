@@ -519,6 +519,4 @@ The AI should become more capable without becoming the authority over its own ca
 
 ## License
 
-See:
-
-    LICENSE
+MIT License — see [LICENSE](LICENSE).
