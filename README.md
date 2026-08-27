@@ -64,6 +64,36 @@ Default:
 
 ---
 
+## Installation
+
+Requires Python 3.10 or later.
+
+    pip install agent-firewall
+
+Zero runtime dependencies.
+
+---
+
+## Quick start
+
+    from agent_firewall import Firewall, Request, Policy
+
+    policy = Policy.from_dict({
+        "version": 1,
+        "agents": {
+            "developer": {
+                "allow": [{"action": "filesystem.write", "resource": "./src/**"}],
+                "deny": [{"action": "filesystem.write", "resource": "./src/secrets/**"}]
+            }
+        }
+    })
+
+    fw = Firewall(policy)
+    decision = fw.check(Request(agent="developer", action="filesystem.write", resource="./src/main.py"))
+    print(decision.kind)  # DecisionKind.ALLOW
+
+---
+
 ## Example
 
 A policy might allow a developer agent to modify source code:

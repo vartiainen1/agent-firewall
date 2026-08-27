@@ -6,8 +6,16 @@ build-backend = "setuptools.build_meta"
 name = "agent-firewall"
 version = "0.1.0"
 description = "A small, deterministic, zero-dependency authorization primitive for AI agents."
+readme = "README.md"
+license = {text = "MIT"}
 requires-python = ">=3.10"
 dependencies = []
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Security",
+]
 
 [project.scripts]
 agent-firewall = "agent_firewall.cli:entry_point"
