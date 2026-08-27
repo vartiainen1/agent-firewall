@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-firewall"
+version = "0.1.0"
+description = "A small, deterministic, zero-dependency authorization primitive for AI agents."
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+agent-firewall = "agent_firewall.cli:entry_point"
+
+[tool.setuptools]
+packages = ["agent_firewall", "agent_firewall.adapters"]
