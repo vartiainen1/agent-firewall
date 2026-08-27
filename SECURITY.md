@@ -530,7 +530,7 @@ It provides authorization.
 
 # 34. Reporting vulnerabilities
 
-Security vulnerabilities should be reported privately to the project maintainers when possible.
+Security vulnerabilities should be reported privately using [GitHub Security Advisories](https://github.com/vartiainen1/agent-firewall/security/advisories/new).
 
 A vulnerability report should include:
 

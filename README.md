@@ -76,9 +76,9 @@ Zero runtime dependencies.
 
 ## Quick start
 
-    from agent_firewall import Firewall, Request, Policy
+    from agent_firewall import Firewall, Request, policy_from_dict
 
-    policy = Policy.from_dict({
+    policy = policy_from_dict({
         "version": 1,
         "agents": {
             "developer": {

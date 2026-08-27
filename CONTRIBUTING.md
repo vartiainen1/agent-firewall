@@ -14,7 +14,24 @@ Avoid contributions that make the core unnecessarily large.
 
 ---
 
-# 2. Before contributing
+# 2. Setup
+
+Requires Python 3.10 or later.
+
+    python -m venv .venv
+    source .venv/bin/activate   # Windows: .venv\Scripts\activate
+    pip install -e .
+
+Run the test suite:
+
+    python -m unittest discover -s tests -t .
+
+There are zero runtime dependencies.
+Do not add third-party packages.
+
+---
+
+# 3. Before contributing
 
 Read:
 
@@ -29,7 +46,7 @@ Read:
 
 ---
 
-# 3. Dependency policy
+# 4. Dependency policy
 
 Runtime dependencies must remain zero unless explicitly approved.
 
@@ -41,7 +58,7 @@ If yes, use the standard library.
 
 ---
 
-# 4. Scope
+# 5. Scope
 
 Do not combine unrelated features into one change.
 
@@ -53,7 +70,7 @@ Prefer small changes with:
 
 ---
 
-# 5. Security-sensitive changes
+# 6. Security-sensitive changes
 
 Changes involving authorization must include tests.
 
@@ -69,7 +86,7 @@ Examples:
 
 ---
 
-# 6. Public API
+# 7. Public API
 
 Avoid unnecessary breaking changes.
 
@@ -84,7 +101,7 @@ Treat these as public:
 
 ---
 
-# 7. Pull requests
+# 8. Pull requests
 
 A contribution should explain:
 
@@ -97,7 +114,7 @@ A contribution should explain:
 
 ---
 
-# 8. Documentation
+# 9. Documentation
 
 If externally observable behavior changes, update:
 
@@ -129,7 +146,7 @@ If scope changes:
 
 ---
 
-# 9. Do not hide behavior
+# 10. Do not hide behavior
 
 Avoid:
 
@@ -142,7 +159,7 @@ Avoid:
 
 ---
 
-# 10. Principle
+# 11. Principle
 
 The best contribution is not necessarily the largest one.
 
